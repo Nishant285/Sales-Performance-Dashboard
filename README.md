@@ -1,6 +1,6 @@
 # Sales Performance Dashboard
 
-**Tools:** SQL (SQLite) · Excel (openpyxl, live formulas) · Power BI (build guide included) · 2,823 order lines, 307 orders, 2003–2005
+**Tools:** SQL (SQLite) · Excel (live formulas) · Power BI (DAX) · 2,823 order lines, 307 orders, 2003–2005
 
 **Dashboard:** 
 A Power BI version of this dashboard is also included in powerbi/Sales-Dashboard.pbix, with DAX measures and a department slicer, alongside the original interactive web dashboard above.
