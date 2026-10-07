@@ -2,6 +2,8 @@
 
 **Tools:** SQL (SQLite) · Excel (openpyxl, live formulas) · Power BI (build guide included) · 2,823 order lines, 307 orders, 2003–2005
 
+**Dashboard:** See `powerbi/Sales-Dashboard.pbix` in this repo — download and open in any browser (fully self-contained, no server needed)
+
 ## Business Question
 
 Which regions, product lines, and customers actually drive profit — not just
@@ -113,6 +115,8 @@ Recreate the Region Analysis, Product Line, and Monthly Trend charts as
 clustered bar / line visuals with `Territory`, `Product Line`, and
 `Order Month` on the axis respectively, and add a Territory slicer for
 interactivity — same pattern as the HR Analytics dashboard build.
+
+A Power BI version of this dashboard is also included in powerbi/Sales-Dashboard.pbix, with DAX measures and a department slicer, alongside the original interactive web dashboard above.
 
 ## 5. Recommendations
 
