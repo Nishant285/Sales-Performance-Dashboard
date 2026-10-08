@@ -1,4 +1,5 @@
 # Sales Performance Dashboard
+<img width="913" height="504" alt="Sales-Dashboard screenshot" src="https://github.com/user-attachments/assets/cf261b76-faa6-4fe3-9cf2-d93cc65724ef" />
 
 **Tools:** SQL (SQLite) · Excel (live formulas) · Power BI (DAX) · 2,823 order lines, 307 orders, 2003–2005
 
