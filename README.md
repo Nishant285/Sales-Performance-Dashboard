@@ -144,6 +144,9 @@ sales_project/
 │   └── results/
 ├── excel/
 │   └── Sales_Performance_Dashboard.xlsx
+├── powerbi/
+│   ├── Sales-Dashboard.pbix
+│   └── Sales-Dashboard screenshot.png
 ├── scripts/
 │   ├── 01_clean_data.py
 │   ├── 02_load_to_sql.py
