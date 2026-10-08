@@ -3,8 +3,7 @@
 
 **Tools:** SQL (SQLite) · Excel (live formulas) · Power BI (DAX) · 2,823 order lines, 307 orders, 2003–2005
 
-**Dashboard:** 
-A Power BI version of this dashboard is also included in powerbi/Sales-Dashboard.pbix, with DAX measures and a department slicer, alongside the original interactive web dashboard above.
+**Dashboard:** Power BI dashboard in `powerbi/Sales-Dashboard.pbix` (screenshot above) with 10 DAX measures and a Territory slicer, reconciled to the SQL results.
 
 ## Business Question
 
@@ -94,29 +93,20 @@ simply wrong until checked against a second source (SQL, in this case).
 - **Monthly Trend** — sales & profit over time + line chart
 - **Top Customers** — top 10 by revenue, live-formula totals
 
-## 4. Power BI
+   ## 4. Power BI Dashboard
 
-This project is built to carry straight into Power BI: import
-`excel/Sales_Performance_Dashboard.xlsx`'s **Raw Data** table (or connect to
-`sales_project/sales.db` directly), then recreate the same KPIs as DAX
-measures:
+   `powerbi/Sales-Dashboard.pbix` connects to the cleaned Raw Data table and uses 10 DAX measures, including:
 
 ```dax
-Total Sales = SUM('Raw Data'[Sales])
-Total Profit = SUM('Raw Data'[Est. Profit])
-Overall Margin = DIVIDE([Total Profit], [Total Sales])
-Distinct Orders = DISTINCTCOUNT('Raw Data'[Order Number])
+   Total Sales = SUM('Raw Data'[Sales])
+   Total Profit = SUM('Raw Data'[Est. Profit])
+   Overall Margin = DIVIDE([Total Profit], [Total Sales])
+   Distinct Orders = DISTINCTCOUNT('Raw Data'[Order Number])
 ```
 
-Note `Distinct Orders` — Power BI's `DISTINCTCOUNT()` handles the
-line-items-vs-orders distinction natively, unlike Excel, which needed the
-manual `SUMPRODUCT` workaround above. Worth mentioning if asked why the same
-metric needed different approaches in each tool.
+   Also: average order value, dispute rate, and territory profit rank (`RANKX`) [add the rest of your 10].
 
-Recreate the Region Analysis, Product Line, and Monthly Trend charts as
-clustered bar / line visuals with `Territory`, `Product Line`, and
-`Order Month` on the axis respectively, and add a Territory slicer for
-interactivity — same pattern as the HR Analytics dashboard build.
+   A Territory slicer updates every KPI and visual. Results were reconciled to the SQL output. `DISTINCTCOUNT` counts orders correctly in one step, where Excel needed a `SUMPRODUCT` workaround.
 
 ## 5. Recommendations
 
