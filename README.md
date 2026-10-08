@@ -50,19 +50,15 @@ differences between regions are in **volume**, not profitability.
 **Product line:** Classic Cars drives the most revenue ($3.92M) but has the
 **lowest margin of any line (27.1%)**, below the 32.2% company average.
 Trains are the opposite — smallest volume ($226K) but **highest margin
-(39.0%)**. This is the same "high sales, low margin vs. low sales, high
-margin" pattern as the Superstore project, in a completely different
-industry.
+(39.0%)**.
 
 **Customer concentration:** the top 2 customers (Euro Shopping Channel,
 Mini Gifts Distributors) alone account for **15.6% of all revenue** across
-307 orders — a tighter concentration than the Superstore dataset's top
-decile.
+307 orders.
 
-**Large deals carry more risk:** Large deal-size orders have a **3.18%
-dispute rate**, roughly 10× the dispute rate of Medium (0.36%) and Small
-(0.31%) deals. Worth flagging to account management — bigger deals aren't
-just bigger, they're measurably riskier to fulfill cleanly.
+**Large deals carry more risk:** Large deals had a ~2.4x higher dispute rate 
+(1.68% vs. ~0.7% for Small/Medium) Worth flagging to account management — 
+bigger deals aren't just bigger, they're measurably riskier to fulfill cleanly.
 
 **Seasonality:** sales spike sharply every Q4 (October in particular) across
 all years in the dataset — consistent with gift-buying seasonality for a
